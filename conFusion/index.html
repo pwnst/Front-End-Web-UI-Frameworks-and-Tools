@@ -66,7 +66,26 @@
                     <li><a href="./contactus.html"><span class="fa fa-envelope-o"
                          aria-hidden="true"></span> Contact</a></li>
                 </ul>
-                <form class="navbar-form navbar-left" role="login">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-toggle="modal" data-target="#loginModal">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:700px">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline" role="login">
                     <div class="form-group">
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
@@ -80,10 +99,12 @@
                         </label>
                     </div>
                     <button type="signin" class="btn btn-primary">Sign In</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
                 </form>
             </div>
         </div>
-    </nav>       
+        </div>
+    </div>       
         <!-- Main component for a primary marketing message or call to action -->
 
         <div class="container">
@@ -99,7 +120,9 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:45px;"></p>
-                    <a type="signin" class="btn btn-warning" href="#order">Reserve Table</a>
+                    <a type="button" class="btn btn-warning btn-block"
+                    data-toggle="tooltip" title="Or Call us at +852 12345678"
+                     data-placement="bottom" href="#reserveform">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -275,6 +298,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+</script>
 
 </body>
 

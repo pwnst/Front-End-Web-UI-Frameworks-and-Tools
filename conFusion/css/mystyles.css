@@ -72,3 +72,7 @@ body{
 .affix {
     top:100px;
 }
+
+.modal-title {
+    color:#000000;
+}
