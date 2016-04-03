@@ -1,0 +1,23 @@
+{
+  "name": "conFusion",
+  "homepage": "https://github.com/pwnst/Front-End-Web-UI-Frameworks-and-Tools",
+  "authors": [
+    "Aleksey Tretyak <aleksey.tretyak@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
